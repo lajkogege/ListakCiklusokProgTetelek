@@ -1,4 +1,4 @@
-szoveg_lista=["Alma", "Körte", "Szilva", "Szölö", "alma"]
+szoveg_lista=["Alma", "Körte", "Szilva", "Szölö", "alma", "Eszencia"]
 
 """
 1. Hány Alma/alma van a listában?
@@ -16,9 +16,9 @@ def elso():
 def masosik():
     db:int=0
     for i in range (0, len(szoveg_lista),1):
-        if szoveg_lista[i].rfind("Sz") or szoveg_lista[i].rfind("sz"):
+        if (szoveg_lista[i])[0:2].rfind("Sz") :
             db+=1
-    print(f"Sz betűk darb száma:{db}")
+    print(f"Sz betűk darab száma:{db}")
     print()
     return db
 
